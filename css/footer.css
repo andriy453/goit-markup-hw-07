@@ -1,0 +1,121 @@
+.footer .footer-conteiner {
+  padding: 0px 80px 0px 80px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .footer .footer-conteiner {
+    width: 480px;
+  }
+}
+
+.conteiner-foter-form {
+  padding: 0px 15px 0px 15px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .conteiner-foter-form {
+    width: 480px;
+  }
+}
+
+.Subscribe {
+  margin-right: 0 auto;
+  margin-left: 0 auto;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.input-Subscribe {
+  max-width: 398px;
+  height: 40px;
+  margin: 0 auto;
+  margin-bottom: 16px;
+  padding: 8px 16px;
+}
+
+::-webkit-input-placeholder {
+  color: var(--bg-color);
+  opacity: 0.6;
+}
+
+::-moz-placeholder {
+  color: var(--bg-color);
+  opacity: 0.6;
+}
+
+:-ms-input-placeholder {
+  color: var(--bg-color);
+  opacity: 0.6;
+}
+
+::-ms-input-placeholder {
+  color: var(--bg-color);
+  opacity: 0.6;
+}
+
+::placeholder {
+  color: var(--bg-color);
+  opacity: 0.6;
+}
+
+.buton-Subscribe {
+  width: 165px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 8px 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.span-Subscribe {
+  margin-right: 16px;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 72px;
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+.social-media {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.footer-text {
+  margin-bottom: 72px;
+  text-align: center;
+}
+
+.lo_gof {
+  display: block;
+  text-align: center;
+  margin-bottom: 16px;
+}

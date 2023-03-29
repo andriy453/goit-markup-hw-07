@@ -1,0 +1,17 @@
+.porfolio__item{
+    margin: 0 auto;
+    width: 396px;
+}
+.lists{
+    display: flex;
+@media screen and (max-width:767px) {
+    
+    flex-wrap: wrap;
+    gap: 16px 24px
+    ;
+}
+@media screen and (min-width:768px) {
+    gap: 0px 24px;
+}
+  
+}

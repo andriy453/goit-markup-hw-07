@@ -1,0 +1,15 @@
+.modal{
+    @media screen and (max-width:479px) {
+        min-width: 300px;
+        max-width:  392px;
+        min-height:  586px;
+    }
+    @media screen and (min-width:480px) {
+        width:  392px;
+        height:  586px;
+    }
+    @media screen and (min-width:768px) {
+        width:  408px;
+       
+    }
+}

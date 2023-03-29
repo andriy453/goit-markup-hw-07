@@ -1,0 +1,98 @@
+.list-heder{
+    @media screen and (min-width:768px){
+        display: flex;
+        justify-content: center;
+        gap:  0px 40px ;
+    }
+    .scaleX-link{
+        @media screen and (min-width:768px){
+            font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+       
+        }
+    }
+    
+}
+.link-hederc{
+    color: var(--color-text-color);
+}
+.link-heder{
+    position: relative;
+}
+.link-hederp{
+    position: relative;
+    @media screen and (min-width:768px) {
+        color: var(--portfolio-buuton-bg-hover-color); 
+    }
+   
+  }
+  .link-heders{
+    position: relative;
+    @media screen and (min-width:768px) {
+        color: var(--portfolio-buuton-bg-hover-color);
+    }
+}
+.heder_conteiner{
+    margin: 0 auto;
+    @media screen and (max-width:1200px){
+       padding: 0px 16px 0px 16px;
+
+    }
+
+    @media screen and (min-width:768px){
+        width: 768px;
+
+    }
+    @media screen and (min-width:1200px){
+        width: 1158px;
+        padding: 0px 15px 0px 15px;
+
+    }
+}
+.nav{
+    @media screen and (min-width:768px){
+    margin: 0 auto;
+    }
+    @media screen and (min-width:768px){
+       margin-right: auto;
+        }
+}
+.menu-hamburger{margin-left:  auto;
+    @media screen and (min-width:768px){
+    display: flex;
+        }
+}
+.adres{
+    @media screen and (min-width:768px) {
+        margin-bottom: -12px;
+        margin-left: 118px;  
+}
+@media screen and (min-width:1200px) {
+ margin-left: 332px;
+
+ .content-link{
+    @media screen and (min-width:1200px) {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
+ }
+    
+ .adres__item:not(:last-child){
+    margin-right: 40px;
+ }
+}
+.list-adres{
+    @media screen and (min-width:1200px) {
+        display: flex;
+}
+}
+}
+.content-link{
+    @media screen and (min-width:768px){
+       font-size: 12px;
+       line-height: 1.17;
+       letter-spacing: 0.04em;
+        }
+}

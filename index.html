@@ -13,22 +13,66 @@
 </head>
 <body>
    <header class="heder">
-<div class="conteiner heder_conteiner">
-    <nav class="nav">
-        <a class="lo_go  link" href="index.html" >WEB<span class="logo_2">Studio</span></a>
-        <ul class="list-heder list">
+  
+<div class="heder_conteiner" >
+  
+    <a class="lo_go  link" href="index.html" >WEB<span class="logo_2">Studio</span></a>
+        
+
+
+
+        <button class="buton-menu-hamburger js-open-menu "   type="button"><svg  height="22px" Width="32px"><use href="./images/sprite.svg#icon-menu-hamburger-1"></use></svg></button>
+        <div   class="menu-hamburger is-open  menuContainer js-menu-container" > 
+            <nav class="nav">
+            <button  type="button" class="close_menu js-close-menu"   ><svg class="svg-modal" width=8 height="8"><use href="./images/sprite.svg#icon-close"></use></svg></button>
+            <ul class="list-heder list">
             <li class="list__item"><a class="link-heders  scaleX-link link" href="./index.html">Studio</a></li>  
             <li class="list__item"><a class="link-heder  scaleX-link link" href="./portfolio.html">Portfolio</a></li>
-            <li class="list__item"><a class="link-heder  scaleX-link link" href="" >Contacts</a></li>
+            <li class="list__item"><a class="link-hederc  scaleX-link link" href="./index.html" >Contacts</a></li>
         </ul> 
     </nav>
+
         <address class="adres">
-            <ul class="list">
+            <ul class="list-adres list">
             <li class="adres__item"><a class="adres__meil link content-link" href="meilto:info@devstudio.com" >info@devstudio.com</a></li>
             <li class="adres__item"><a class="adres__tel link content-link" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a></li>
         </ul>
-        </address></div>
+        </address>
+        <ul class="list-link">
+            <li class="team__item-link">
+                <a class="link_team" href="https://instagram.com"  aria-label="icon-instagram">
+                    <svg width="16" height="16">
+                        <use href="./images/sprite.svg#icon-instagram-2"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="team__item-link">
+                <a class="link_team" href="https://twitter.com"  aria-label="icon-twitter" >
+                    <svg width="16" height="16">
+                        <use href="./images/sprite.svg#icon-twitter-1"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="team__item-link">
+                <a class="link_team" href="https://facebook.com"  aria-label="icon-facebook">
+                    <svg width="16" height="16">
+                        <use href="./images/sprite.svg#icon-facebook-1"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="team__item-link">
+                <a class="link_team" href="https://linkedin.com" aria-label="icon-linkedin">
+                    <svg width="16" height="16">
+                        <use href="./images/sprite.svg#icon-linkedin-1"></use>
+                    </svg>
+                </a>
+            </li>
+          </ul>
+        </div>
      
+
+        </div>
+   
    </header>
    <main>
     
@@ -67,7 +111,7 @@
   
 </section>
 <section class="section">
-  <div class="conteiner"> <h2 hidden class="visually-hidden">our advantages</h2>
+  <div class=" conteiner-pading16px"> <h2 hidden class="visually-hidden">our advantages</h2>
     <ul class="advantages list">
         <li class="advantages__item icon1"><h3 class="advantages__title">Strategy</h3>
             <p class="advantages__text">Our goal is to identify the business problem to walk away with the perfect and creative solution. </p></li>
@@ -84,9 +128,33 @@
 <section class="what" >
 <div class="conteiner"><h2  class="what__title">What are we doing</h2>
 <ul class="what__list list">
-    <li class="what__item"><img class="what__imeg" src="./images/Rectangle73.jpg" alt="analytics" width="360"></li>
-    <li class="what__item"> <img class="what__imeg" src="./images/Rectangle71.jpg" alt="messenger" width="360"></li>
-    <li class="what__item"><img class="what__imeg"  src="./images/Rectangle72.jpg" alt="web application" width="360"></li>
+    <li class="what__item">
+        <img class="what__imeg"
+        srcset="   
+        ./images/Rectangle73.jpg  1x,
+        ./images/Rectangle73-2x.jpg  2x,
+        ./images/Rectangle73-3x.jpg  3x
+        "
+         src="./images/Rectangle73.jpg" 
+         alt="analytics" width="360"></li>
+    <li class="what__item">
+         <img class="what__imeg" 
+         src="./images/Rectangle71.jpg"
+         srcset="   
+         ./images/Rectangle71.jpg  1x,
+         ./images/Rectangle-71-2x.jpg  2x,
+         ./images/Rectangle-71-3x(1).jpg  3x 
+         "
+          alt="messenger" width="360"></li>
+    <li class="what__item">
+        <img class="what__imeg"  
+        src="./images/Rectangle72.jpg"
+        srcset="   
+        ./images/Rectangle72.jpg  1x,
+        ./images/Rectangle-72-2x.jpg  2x,
+        ./images/Rectangle-72-3x.jpg  3x
+         "
+         alt="web application" width="360"></li>
 </ul>
 </div>
 </section>
@@ -94,7 +162,15 @@
     <div class="conteiner"><h2 class="team__title">Our Team</h2>
     
     <ul class="team__list list"> 
-        <li class="team__item"> <img class="team__photo" src= "./images/MarkGuerrero.jpg" alt="photo Mark Guerrero"  width="264">
+        <li class="team__item">
+             <img class="team__photo" 
+            src= "./images/MarkGuerrero.jpg" 
+            srcset="./images/MarkGuerrero.jpg  1x, 
+            ./images/MarkGuerrero540.jpg  2x,
+            ./images/MarkGuerrero792.jpg 3x
+            "
+            alt="photo Mark Guerrero" 
+             width="264">
            <div class="stule_team"><h3 class="team__sabtitle">Mark Guerrero</h3>
             <p class="team__text"> Product Designer</p>
           <ul class="team__list-link">
@@ -129,7 +205,15 @@
           </ul>
         </div> 
         </li>
-        <li class="team__item"><img class="team__photo" src="./images/TomFord.jpg" alt="photo Tom Ford" width="264">
+        <li class="team__item">
+            <img class="team__photo"
+             src="./images/TomFord.jpg"
+             srcset="./images/TomFord.jpg  1x,
+             ./images/TomFord540.jpg  2x,
+             ./images/TomFord792.jpg 3x
+             "
+             alt="photo Tom Ford"
+              width="264">
             <div class="stule_team"><h3 class="team__sabtitle" >Tom Ford</h3>
             <p class="team__text">Frontend Developer</p>
             <ul class="team__list-link">
@@ -164,7 +248,16 @@
               </ul>
             </div>
         </li>
-        <li class="team__item"> <img class="team__photo"  src="./images/CamilaGarcia.jpg" alt="photo Camila Garcia" width="264">
+        <li class="team__item"> 
+            <img class="team__photo"  
+           
+            srcset=" ./images/CamilaGarcia.jpg  1x,
+            ./images/CamilaGarcia540.jpg  2x,
+            ./images/CamilaGarcia792.jpg  3x
+            "
+            src="./images/CamilaGarcia.jpg" 
+            alt="photo Camila Garcia"
+             width="264" >
             <div class="stule_team"> <h3 class="team__sabtitle" >  Camila Garcia</h3>
             <p class="team__text">Marketing</p>
             <ul class="team__list-link">
@@ -199,7 +292,15 @@
               </ul>
             </div>
         </li>
-        <li class="team__item" ><img class="team__photo"  src="./images/DanielWilson.jpg" alt="photo Daniel Wilson" width="264">
+        <li class="team__item" >
+            <img class="team__photo" 
+             src="./images/DanielWilson.jpg"
+             srcset="./images/DanielWilson.jpg  1x,
+               ./images/DanielWilson540.jpg  2x,
+             ./images/DanielWilson792.jpg  3x
+             "
+              alt="photo Daniel Wilson"
+               width="264">
             <div class="stule_team"> <h3 class="team__sabtitle" >Daniel Wilson</h3>
             <p class="team__text" >UI Designer</p>
             <ul class="team__list-link">
@@ -242,21 +343,21 @@
     <div class="conteiner">
     <h3 class="Customers__title">Customers</h3>
     <ul class="Customers__list">
-        <li  class="Customers__item"><a  class="Customers__link " href=""><svg class="company1" width="41" height="47"><use  href="./images/sprite.svg#icon-company1">
+        <li  class="Customers__item"><a  class="Customers__link " href="./index.html"><svg class="company" width="41" height="47"><use  href="./images/sprite.svg#icon-company1">
         </use></svg></a></li>
-        <li  class="Customers__item"><a  class="Customers__link " href=""><svg class="company2" width="40" height="52"><use href="./images/sprite.svg#icon-company2">
+        <li  class="Customers__item"><a  class="Customers__link " href="./index.html"><svg class="company" width="40" height="52"><use href="./images/sprite.svg#icon-company2">
 
         </use></svg></a></li>
-        <li  class="Customers__item"><a  class="Customers__link " href=""><svg class="company3" width="44" height="41"><use href="./images/sprite.svg#icon-company3">
+        <li  class="Customers__item"><a  class="Customers__link " href="./index.html"><svg class="company" width="44" height="41"><use href="./images/sprite.svg#icon-company3">
 
         </use></svg></a></li>
-        <li class="Customers__item"><a  class="Customers__link " href=""><svg class="company4" width="84" height="41"><use href="./images/sprite.svg#icon-company4">
+        <li class="Customers__item"><a  class="Customers__link " href="./index.html"><svg class="company" width="84" height="41"><use href="./images/sprite.svg#icon-company4">
 
         </use></svg></a></li>
-        <li class="Customers__item"><a  class="Customers__link " href=""><svg class="company5" width="63" height="45"><use href="./images/sprite.svg#icon-company5">
+        <li class="Customers__item"><a  class="Customers__link " href="./index.html"><svg class="company" width="63" height="45"><use href="./images/sprite.svg#icon-company5">
 
         </use></svg></a></li>
-        <li class="Customers__item"><a  class="Customers__link " href=""><svg class="company6" width="94" height="44"><use href="./images/sprite.svg#icon-company6">
+        <li class="Customers__item"><a  class="Customers__link " href="./index.html"><svg class="company" width="94" height="44"><use href="./images/sprite.svg#icon-company6">
 
         </use></svg> </a></li>
     </ul>
@@ -264,9 +365,10 @@
 </section>
    </main>
    <footer  class="footer">
-    <div class="footer-conteiner">
+    <div class="footer-conteiner-all">
+    <div class="footer-conteiner flex-footer">
     <div class="flex">
-        <div >
+        
 <a class="lo_gof link" href="index.html">WEB<span class="footer-logo">Studio</span></a>
 <p class="footer-text" >Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
 </div>
@@ -301,8 +403,9 @@
             </svg>
             </a>
         </li>
-    </ul></div>
-    <div class="foter-form">
+    </ul> </div></div>
+
+    <div class="foter-form conteiner-foter-form">
         <p class="Subscribe" > Subscribe</p>
     <form class="form-Subscribe" >
     
@@ -311,10 +414,11 @@
       <button class="buton-Subscribe" type="submit"><span class="span-Subscribe">Subscribe</span> <svg class="form-telegram"  width=24 height=20 ><use href="./images/sprite.svg#icon-telegram"></use></svg></button>
     </form>
 
-</div>
+
 </div>
     </div>
    </footer>
-   <script src="./js/modal.js"></script>
+   <script src="./js/modal.js" ></script>
+   <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
