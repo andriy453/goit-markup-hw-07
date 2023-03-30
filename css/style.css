@@ -126,7 +126,7 @@ li {
   .link-hederp::after {
     content: " ";
     position: absolute;
-    bottom: -24px;
+    bottom: -26px;
     -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     -webkit-transition-property: background-color;
@@ -139,12 +139,29 @@ li {
     border-radius: 2px;
   }
 }
+        @media screen and (min-width: 1200px) {
+          .link-hederp::after {
+            content: " ";
+            position: absolute;
+            bottom: -28px;
+            -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            -webkit-transition-property: background-color;
+            transition-property: background-color;
+            display: block;
+            width: 0;
+            width: 100%;
+            height: 4px;
+            background-color: var(--portfolio-buuton-bg-hover-color);
+            border-radius: 2px;
+          }
+        }
 
 @media screen and (min-width: 768px) {
   .link-heders::after {
     content: " ";
     position: absolute;
-    bottom: -25px;
+    bottom: -26px;
     -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     -webkit-transition-property: background-color;
@@ -155,7 +172,23 @@ li {
     height: 4px;
     background-color: var(--portfolio-buuton-bg-hover-color);
     border-radius: 2px;
-  }
+  }}
+    @media screen and (min-width: 1200px) {
+      .link-heders::after {
+        content: " ";
+        position: absolute;
+        bottom: -28px;
+        -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        -webkit-transition-property: background-color;
+        transition-property: background-color;
+        display: block;
+        width: 0;
+        width: 100%;
+        height: 4px;
+        background-color: var(--portfolio-buuton-bg-hover-color);
+        border-radius: 2px;
+      }
 }
 
 .link-heder::after {
@@ -184,10 +217,6 @@ li {
   color: var(--portfolio-buuton-bg-hover-color);
   border: var(--portfolio-buuton-bg-hover-color);
   border-radius: 2px;
-}
-
-.adres {
-  margin-left: auto;
 }
 
 .content-link {
@@ -555,6 +584,11 @@ li {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--seconari-text-color);
+}
+@media screen and (max-width: 1200px) {
+  .advantages__text {
+    font-weight: 500;
+  }
 }
 
 .what {
@@ -1017,12 +1051,22 @@ li {
 }
 
 .menu-hamburger {
+  z-index: 5;
   display: block;
   position: static;
 }
 @media screen and (max-width: 767px) {
   .menu-hamburger {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 80px 35px 40px 40px;
     position: absolute;
     top: 0px;
@@ -1061,7 +1105,6 @@ li {
 }
 @media screen and (max-width: 767px) {
   .menu-hamburger .adres__item:not(:first-child) {
-    margin-top: 284px;
     margin-bottom: 40px;
   }
 }
@@ -1083,9 +1126,6 @@ li {
     display: -ms-flexbox;
     display: flex;
     margin-top: 48px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1096,11 +1136,6 @@ li {
 @media screen and (max-width: 767px) {
   .menu-hamburger .list__item:not(:last-child) {
     margin-bottom: 40px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .menu-hamburger .link-hederc {
-    color: var(--portfolio-buuton-bg-hover-color);
   }
 }
 
@@ -1189,6 +1224,7 @@ li {
 }
 @media screen and (min-width: 1200px) {
   .hero {
+    max-width: 1440px;
     padding: 188px 0px 188px 0px;
   }
 }
@@ -1229,8 +1265,8 @@ li {
 }
 @media screen and (max-width: 1199px) {
   .conteiner {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -1327,6 +1363,11 @@ li {
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .footer .footer-conteiner {
     width: 480px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1200px) {
+  .footer .footer-conteiner {
+    margin-bottom: 72px;
   }
 }
 
@@ -1450,11 +1491,6 @@ li {
       -ms-flex-pack: center;
           justify-content: center;
 }
-@media screen and (max-width: 767px) {
-  .social-links {
-    margin-bottom: 72px;
-  }
-}
 
 .links {
   display: -webkit-box;
@@ -1471,8 +1507,12 @@ li {
 }
 
 .social-media {
-  text-align: center;
   margin-bottom: 16px;
+}
+@media screen and (max-width: 767px) {
+  .social-media {
+    text-align: center;
+  }
 }
 @media screen and (min-width: 1200px) {
   .social-media {
@@ -1482,7 +1522,6 @@ li {
 
 @media screen and (max-width: 767px) {
   .footer-text {
-    margin-bottom: 72px;
     text-align: center;
   }
 }
@@ -1514,6 +1553,11 @@ li {
 @media screen and (min-width: 767px) {
   .flex {
     width: 264px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .flex {
+    margin-bottom: 72px;
   }
 }
 
@@ -1549,6 +1593,7 @@ li {
 @media screen and (max-width: 1200px) {
   .footer .footer-conteiner {
     margin: 0 auto;
+    margin-bottom: 72px;
   }
 }
 
@@ -1595,6 +1640,12 @@ li {
   }
 }
 
+.porfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media screen and (max-width: 479px) {
   .modal {
     min-width: 300px;
@@ -1633,6 +1684,13 @@ li {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .heder {
+    padding-bottom: 12px;
+    padding-top: 24px;
+  }
+}
+
 .link-hederc {
   color: var(--color-text-color);
 }
@@ -1643,20 +1701,12 @@ li {
 
 .link-hederp {
   position: relative;
-}
-@media screen and (min-width: 768px) {
-  .link-hederp {
-    color: var(--portfolio-buuton-bg-hover-color);
-  }
+  color: var(--portfolio-buuton-bg-hover-color);
 }
 
 .link-heders {
   position: relative;
-}
-@media screen and (min-width: 768px) {
-  .link-heders {
-    color: var(--portfolio-buuton-bg-hover-color);
-  }
+  color: var(--portfolio-buuton-bg-hover-color);
 }
 
 .heder_conteiner {
@@ -1695,15 +1745,14 @@ li {
 }
 @media screen and (min-width: 768px) {
   .menu-hamburger {
-    display: -webkit-box;
-    display: -ms-flexbox;
+
     display: flex;
+    align-items: center;
   }
 }
 
 @media screen and (min-width: 768px) {
   .adres {
-    margin-bottom: -12px;
     margin-left: 118px;
   }
 }
@@ -1737,6 +1786,21 @@ li {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .adres__item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .adres__meil {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
   }
 }
 
@@ -1775,6 +1839,9 @@ li {
 @media screen and (min-width: 1200px) {
   .advantages .advantages__title {
     margin-top: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
   }
 }
 @media screen and (min-width: 768px) {

@@ -14,6 +14,14 @@
     }
     
 }
+.heder{
+    @media screen and (min-width:768px) {
+        @media screen and (max-width:1200px) {
+            padding-bottom: 12px;
+            padding-top: 24px;
+        }
+    }
+}
 .link-hederc{
     color: var(--color-text-color);
 }
@@ -22,17 +30,15 @@
 }
 .link-hederp{
     position: relative;
-    @media screen and (min-width:768px) {
         color: var(--portfolio-buuton-bg-hover-color); 
     }
    
-  }
+  
   .link-heders{
     position: relative;
-    @media screen and (min-width:768px) {
         color: var(--portfolio-buuton-bg-hover-color);
     }
-}
+
 .heder_conteiner{
     margin: 0 auto;
     @media screen and (max-width:1200px){
@@ -65,7 +71,7 @@
 }
 .adres{
     @media screen and (min-width:768px) {
-        margin-bottom: -12px;
+  
         margin-left: 118px;  
 }
 @media screen and (min-width:1200px) {
@@ -78,7 +84,7 @@
         letter-spacing: 0.02em;
     }
  }
-    
+
  .adres__item:not(:last-child){
     margin-right: 40px;
  }
@@ -96,3 +102,18 @@
        letter-spacing: 0.04em;
         }
 }
+ .adres__item:not(:last-child){
+     @media screen and (min-width:768px) {
+         @media screen and (max-width:1200px) {
+             margin-bottom: 8px;
+         }
+     }
+ }
+.adres__meil{
+    @media screen and (max-width:767px) {
+    font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+    }
+ }
