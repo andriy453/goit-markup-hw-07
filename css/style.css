@@ -1520,12 +1520,12 @@ li {
 @media screen and (min-width: 767px) {
   .footer-flex-block {
     margin-left: 24px;
-    margin-right: 80px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-flex-block {
     margin-left: 120px;
+    margin-right: 80px;
   }
 }
 
