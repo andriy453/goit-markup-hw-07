@@ -33,40 +33,17 @@
   padding: 8px 16px;
 }
 
-::-webkit-input-placeholder {
-  color: var(--bg-color);
-  opacity: 0.6;
-}
 
-::-moz-placeholder {
-  color: var(--bg-color);
-  opacity: 0.6;
-}
-
-:-ms-input-placeholder {
-  color: var(--bg-color);
-  opacity: 0.6;
-}
-
-::-ms-input-placeholder {
-  color: var(--bg-color);
-  opacity: 0.6;
-}
 
 ::placeholder {
   color: var(--bg-color);
   opacity: 0.6;
 }
 
-.buton-Subscribe {
+.buton-Subscribe { display: flex;
   width: 165px;
   height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding: 8px 24px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
           align-items: center;
   margin-left: auto;
   margin-right: auto;
@@ -81,24 +58,14 @@
 }
 
 .social-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 72px;
 }
 
 .links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
           align-items: center;
   width: 40px;
   height: 40px;
