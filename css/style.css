@@ -225,6 +225,7 @@ li {
 .hero {
   text-align: center;
   background-color: var(--hero-and-footer-bg-color);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 47, 66, 0.7)), to(rgba(46, 47, 66, 0.7))), url(../images/owerlof.jpg);
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/owerlof.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -233,8 +234,8 @@ li {
   margin-right: auto;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero {
-
+  .hero .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 47, 66, 0.7)), to(rgba(46, 47, 66, 0.7))), url("../images/people-office2x.jpg");
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office2x.jpg");
   }
 }
@@ -429,8 +430,8 @@ li {
 .checkbox {
   position: absolute;
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   margin-right: 8px;
   width: 16px;
   height: 16px;
@@ -752,7 +753,7 @@ li {
 }
 
 .links {
-  background-color: var(--seconari-text-color);
+  background-color: var(--portfolio-buuton-bg-hover-color);
 }
 
 .links:hover,
@@ -946,7 +947,7 @@ li {
 
 .porfolio__photo {
   display: block;
-
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(77, 90, 229, 0.1)), to(rgba(77, 90, 229, 0.1))), url(4074365.jpg);
   background: linear-gradient(0deg, rgba(77, 90, 229, 0.1), rgba(77, 90, 229, 0.1)), url(4074365.jpg);
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1583,6 +1584,7 @@ li {
 }
 @media screen and (max-width: 767px) {
   .lists {
+    -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 16px 24px;
   }
@@ -1840,6 +1842,8 @@ li {
 }
 @media screen and (min-width: 768px) {
   .team .team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
