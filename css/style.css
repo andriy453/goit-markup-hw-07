@@ -1160,6 +1160,17 @@ li {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .menu-hamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .scaleX-link {
   font-size: 36px;
   line-height: 1.11;
