@@ -1,19 +1,31 @@
 .porfolio__item{
     margin: 0 auto;
-    width: 396px;
+  height: auto;
+    @media screen and (min-width:768px) {
+    
+            @media screen and (max-width:1199px) {
+          width: 356px;
+            display: flex;
+            }
+        }
 }
 .lists{
     display: flex;
+
 @media screen and (max-width:767px) {
     
     flex-wrap: wrap;
-    gap: 16px 24px
-    ;
+    gap: 16px 24px;
 }
 @media screen and (min-width:768px) {
     gap: 0px 24px;
 }
-  
+  @media screen and (max-width:768px) {
+    justify-content: flex-start;
+  }
+
+
+
 }
 .porfolio{
     display: flex;
